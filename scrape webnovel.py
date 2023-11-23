@@ -26,7 +26,7 @@ def formatting(next_link):
 		return url_to_scrape[:bracketposition] + next_link
 	
 def append_file(content):
-	with open(f'C:\Users\Pran\Desktop\patreon\input files\{output_file}.txt', 'a', encoding= encoding_type) as files:
+	with open(f'{output_file}.txt', 'a', encoding= encoding_type) as files:
 		files.write(content)
 		files.write("\nNEWCHAPTERNEWCHAPTERNEWCHAPTERNEWCHAPTERNEWCHAPTERNEWCHAPTERNEWCHAPTER\n\n\n")
 		files.close()
@@ -167,7 +167,7 @@ def access_website_with_selenium():
 try:
 	if __name__ == "__main__":
   # You'll need to add this input to get the link_text
-		with open(f'C:\Users\Pran\Desktop\patreon\input files\{output_file}.txt', 'w') as files:
+		with open(f'{output_file}.txt', 'w') as files:
 			files.write("") #clears file
 
 		access_website_with_selenium()
